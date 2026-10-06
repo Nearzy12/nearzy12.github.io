@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Monkton Rec Hockey League</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header>
+
+        <div class="wrap">
+
+            <small>LEAGUE CENTRAL</small>
+
+            <h1>Monkton Rec Hockey League</h1>
+
+            <p>Standings, Schedule &amp; Results</p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+         ========================= -->
+
+    <main class="wrap">
+
+
+        <!-- =========================
+             STANDINGS SECTION
+             ========================= -->
+
+        <section class="card">
+
+            <div class="heading">
+
+                <div>
+
+                    <small>2026 - 2027 SEASON</small>
+
+                    <h2>Standings</h2>
+
+                </div>
+
+                <!-- JavaScript puts the current status here -->
+                <span id="standingsStatus">Loading...</span>
+
+            </div>
+
+
+            <div class="table-wrap">
+
+                <!--
+                    JavaScript loads the standings
+                    from Google Sheets into this table.
+                -->
+
+                <table id="standings">
+
+                    <thead></thead>
+
+                    <tbody></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCHEDULE SECTION
+             ========================= -->
+
+        <section class="card">
+
+            <div class="heading">
+
+                <div>
+
+                    <small>GAME SCHEDULE</small>
+
+                    <h2>Schedule &amp; Results</h2>
+
+                </div>
+
+                <!-- JavaScript puts the current status here -->
+                <span id="scheduleStatus">Loading...</span>
+
+            </div>
+
+
+            <div class="table-wrap">
+
+                <!--
+                    JavaScript loads the schedule
+                    from Google Sheets into this table.
+                -->
+
+                <table id="schedule">
+
+                    <thead></thead>
+
+                    <tbody></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <div class="wrap">
+
+            Monkton Rec Hockey League
+
+            <span id="updated"></span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
